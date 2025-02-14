@@ -4,13 +4,13 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 
-# Download necessary NLTK data
-#nltk.download('punkt')
-#nltk.download('stopwords')
+
+nltk.download('punkt')
+nltk.download('stopwords')
 
 
 # Load a pre-trained Hugging Face model
-chatbot  = pipeline("text-generation", model="maheshhuggingface/gita-text-generation-gpt2-mahesh") 
+chatbot  = pipeline("text-generation", model="maheshhuggingface/Medical-Data-Question-Answers-finetuned-gpt2") 
 
 
 # Define healthcare-specific response logic (or use a model to generate responses)
